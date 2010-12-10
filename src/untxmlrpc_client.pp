@@ -232,10 +232,10 @@ Begin
 
   if Trim(aURI) = '' then aURI := '/';
   if aPort=0 then
-    case UpperCase(uri.Protocol) of
-      'HTTP'  : aPort :=  80;
-      'HTTPS' : aPort := 443;
-    end;
+    if UpperCase(uri.Protocol) = 'HTTP' then
+      aPort :=  80
+    else
+      aPort := 443;
 
   LHTTPClient.URI  := aURI;
   LHTTPClient.Host := aHost;
