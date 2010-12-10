@@ -1,0 +1,21 @@
+h1. XMLRPC Client
+
+The following source code is written in Object Pascal using Lazarus and FreePascal Compiler.
+It provides a user interface with:
+* Address place with combo box (stores only unique addresses)
+* Connect button
+* Syntax highlight for source XML
+* Syntax highlight for the response XML
+* Text log of the communication and answer including our original XML that was sent.
+
+The user interface also includes menu options for the right menu click for both the XML to send and the XML that returns.
+
+h2. Dependencies 
+* "FreePascal":http://freepascal.org/ Compiler version 2.4 and above
+* "Lazarus IDE":http://lazarus.freepascal.org/ version 0.9.8 and above
+* "lNet – Lightweight networking library":http://lnet.wordpress.com/
+
+h2. Notes:
+* The code tested only on Linux and GTK2, but it should work on all lNet's supported platforms.
+* The code is released as an open source GPL v2
+
